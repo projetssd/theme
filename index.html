@@ -436,8 +436,8 @@
 
                                     <span class="float-right">
                                         <div class="btn-group">
-                                            <button href="javascript:void(0)" id="slide-toast" type="button"
-                                                class="btn btn-warning">Désinstaller</button>
+                                            <button data-toggle="modal" data-target="#responsive-modal"
+                                                type="button" class="btn btn-warning">Désinstaller</button>
                                             <button type="button"
                                                 class="btn btn-warning dropdown-toggle dropdown-toggle-split"
                                                 id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true"
@@ -453,6 +453,29 @@
                             </div>
                         </div>
                     </div>
+                    <!-- modal confirmation désinstallation -->
+                    <div id="responsive-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Désinstallation de "name_app"</h4>
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">×</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Etes vous sur de vouloir désinstaller <b><span
+                                                class="appli-uninstall">name_App</span></b> ?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" id="slide-toast"
+                                        data-appli="kitana">Confirmer</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal confirmation désinstallation -->
                     <!-- Column -->
                     <!-- Column -->
                     <div class="col-lg-3 col-md-6">
