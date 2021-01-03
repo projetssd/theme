@@ -15,6 +15,9 @@
     <link href="dist/css/style.min.css" rel="stylesheet">
     <link href="dist/css/style.css" rel="stylesheet">
     <link href="assets/extra-libs/toastr/dist/build/toastr.min.css" rel="stylesheet">
+    <!-- This page CSS -->
+    <link href="assets/libs/jquery-steps/jquery.steps.css" rel="stylesheet">
+    <link href="assets/libs/jquery-steps/steps.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -312,60 +315,6 @@
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <aside class="left-sidebar">
-            <!-- Sidebar scroll-->
-            <div class="scroll-sidebar">
-                <!-- Sidebar navigation-->
-                <nav class="sidebar-nav">
-                    <ul id="sidebarnav">
-                        <!-- User Profile-->
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href="index.html"
-                                aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
-                                    class="hide-menu">Accueil </span></a></li>
-                        <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span
-                                class="hide-menu">Outils</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link one-column has-arrow waves-effect waves-dark"
-                                href="javascript:void(0)" aria-expanded="false"><i
-                                    class="mdi mdi-inbox-arrow-down"></i><span class="hide-menu">Outils </span></a>
-                            <ul aria-expanded="false" class="collapse first-level">
-                                <li class="sidebar-item"><a href="" class="sidebar-link"><i
-                                            class="fa fa-life-ring"></i><span class="hide-menu"> Plex-AutoScan
-                                        </span></a></li>
-                                <li class="sidebar-item"><a href="" class="sidebar-link"><i
-                                            class="fa fa-wrench"></i><span class="hide-menu"> autoscan
-                                        </span></a></li>
-                                <li class="sidebar-item"><a href="" class="sidebar-link"><i
-                                            class="fa fa-rocket"></i><span class="hide-menu"> cloudplow
-                                        </span></a></li>
-                                <li class="sidebar-item"><a href="" class="sidebar-link"><i class="fa fa-taxi"></i><span
-                                            class="hide-menu"> crop
-                                        </span></a></li>
-                                <div class="dropdown-divider"></div>
-                                <li class="sidebar-item"><a href="" class="sidebar-link"><i
-                                            class="fa fa-bullhorn"></i><span class="hide-menu"> Google OAuth 2.0
-                                        </span></a></li>
-                                <li class="sidebar-item"><a href="" class="sidebar-link"><i
-                                            class="fa fa-bullhorn"></i><span class="hide-menu">
-                                            Cloudflare
-                                        </span></a></li>
-                            </ul>
-                        </li>
-                        <!-- ============================================================== -->
-                        <div class="dropdown-divider"></div>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href=""><i
-                                    class="mdi mdi-apps"></i><span id="affiche-install-appli"
-                                    class="hide-menu">Applications</span></a></li>
-                        <!-- ============================================================== -->
-                        <div class="dropdown-divider"></div>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark" href=""><i
-                                    class="mdi mdi-file-cloud"></i><span class="hide-menu install-modal">Configuration
-                                    rclone</span></a></li>
-                    </ul>
-                </nav>
-                <!-- End Sidebar navigation -->
-            </div>
-            <!-- End Sidebar scroll-->
-        </aside>
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
@@ -374,37 +323,256 @@
         <!-- ============================================================== -->
         <div class="page-wrapper">
             <!-- ============================================================== -->
-            <!-- Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <div class="page-breadcrumb">
-                <div class="row">
-                    <div class="col align-self-center">
-                        <h4 class="page-title">Applications</h4>
-                        <div class="d-flex align-items-center">
-                            <nav aria-label="breadcrumb">
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col align-self-center">
-                        <div class="d-flex no-block justify-content-end align-items-center">
-                            <input class="form-control form-control-navbar" id="searchappli" type="search"
-                                placeholder="Recherche" aria-label="Search">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ============================================================== -->
-            <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <div class="row">
-
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body wizard-content">
+                            <h4 class="card-title">Custom Design Example</h4>
+                            <h6 class="card-subtitle">sous titre</h6>
+                            <form action="#" class="tab-wizard wizard-circle wizard clearfix" role="application"
+                                id="steps-uid-5">
+                                <div class="steps clearfix">
+                                    <ul role="tablist">
+                                        <li role="tab" class="first current" aria-disabled="false" aria-selected="true">
+                                            <a id="steps-uid-5-t-0" href="#steps-uid-5-h-0"
+                                                aria-controls="steps-uid-5-p-0"><span
+                                                    class="current-info audible">current step: </span><span
+                                                    class="step">1</span> Personal Info</a></li>
+                                        <li role="tab" class="disabled" aria-disabled="true"><a id="steps-uid-5-t-1"
+                                                href="steps-uid-5-h-1" aria-controls="steps-uid-5-p-1"><span
+                                                    class="step">2</span> Job Status</a></li>
+                                        <li role="tab" class="disabled" aria-disabled="true"><a id="steps-uid-5-t-2"
+                                                href="#steps-uid-5-h-2" aria-controls="steps-uid-5-p-2"><span
+                                                    class="step">3</span> Interview</a></li>
+                                        <li role="tab" class="disabled last" aria-disabled="true"><a
+                                                id="steps-uid-5-t-3" href="#steps-uid-5-h-3"
+                                                aria-controls="steps-uid-5-p-3"><span class="step">4</span> Remark</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="content clearfix">
+                                    <!-- Step 1 -->
+                                    <h6 id="steps-uid-5-h-0" tabindex="-1" class="title current">Personal Info</h6>
+                                    <section id="steps-uid-5-p-0" role="tabpanel" aria-labelledby="steps-uid-5-h-0"
+                                        class="body current" aria-hidden="false">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="firstName1">First Name :</label>
+                                                    <input type="text" class="form-control" id="firstName1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="lastName1">Last Name :</label>
+                                                    <input type="text" class="form-control" id="lastName1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="emailAddress1">Email Address :</label>
+                                                    <input type="email" class="form-control" id="emailAddress1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phoneNumber1">Phone Number :</label>
+                                                    <input type="tel" class="form-control" id="phoneNumber1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="location1">Select City :</label>
+                                                    <select class="custom-select form-control" id="location1"
+                                                        name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="Amsterdam">India</option>
+                                                        <option value="Berlin">USA</option>
+                                                        <option value="Frankfurt">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="date1">Date of Birth :</label>
+                                                    <input type="date" class="form-control" id="date1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 2 -->
+                                    <h6 id="steps-uid-5-h-1" tabindex="-1" class="title">Job Status</h6>
+                                    <section id="steps-uid-5-p-1" role="tabpanel" aria-labelledby="steps-uid-5-h-1"
+                                        class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle1">Job Title :</label>
+                                                    <input type="text" class="form-control" id="jobTitle1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="videoUrl1">Company Name :</label>
+                                                    <input type="text" class="form-control" id="videoUrl1">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="shortDescription1">Job Description :</label>
+                                                    <textarea name="shortDescription" id="shortDescription1" rows="6"
+                                                        class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 3 -->
+                                    <h6 id="steps-uid-5-h-2" tabindex="-1" class="title">Interview</h6>
+                                    <section id="steps-uid-5-p-2" role="tabpanel" aria-labelledby="steps-uid-5-h-2"
+                                        class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="int1">Interview For :</label>
+                                                    <input type="text" class="form-control" id="int1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="intType1">Interview Type :</label>
+                                                    <select class="custom-select form-control" id="intType1"
+                                                        data-placeholder="Type to search cities" name="intType1">
+                                                        <option value="Banquet">Normal</option>
+                                                        <option value="Fund Raiser">Difficult</option>
+                                                        <option value="Dinner Party">Hard</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Location1">Location :</label>
+                                                    <select class="custom-select form-control" id="Location1"
+                                                        name="location">
+                                                        <option value="">Select City</option>
+                                                        <option value="India">India</option>
+                                                        <option value="USA">USA</option>
+                                                        <option value="Dubai">Dubai</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="jobTitle2">Interview Date :</label>
+                                                    <input type="date" class="form-control" id="jobTitle2">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Requirements :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadio6" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label"
+                                                                for="customRadio6">Employee</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadio7" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label"
+                                                                for="customRadio7">Contract</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Step 4 -->
+                                    <h6 id="steps-uid-5-h-3" tabindex="-1" class="title">Remark</h6>
+                                    <section id="steps-uid-5-p-3" role="tabpanel" aria-labelledby="steps-uid-5-h-3"
+                                        class="body" aria-hidden="true" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="behName1">Behaviour :</label>
+                                                    <input type="text" class="form-control" id="behName1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Confidance</label>
+                                                    <input type="text" class="form-control" id="participants1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="participants1">Result</label>
+                                                    <select class="custom-select form-control" id="participants1"
+                                                        name="location">
+                                                        <option value="">Select Result</option>
+                                                        <option value="Selected">Selected</option>
+                                                        <option value="Rejected">Rejected</option>
+                                                        <option value="Call Second-time">Call Second-time</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="decisions1">Comments</label>
+                                                    <textarea name="decisions" id="decisions1" rows="4"
+                                                        class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Rate Interviwer :</label>
+                                                    <div class="c-inputs-stacked">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadio1" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio1">1
+                                                                star</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadio2" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio2">2
+                                                                star</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadio3" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio3">3
+                                                                star</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadio4" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio4">4
+                                                                star</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="customRadio5" name="customRadio"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio5">5
+                                                                star</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="actions clearfix">
+                                    <ul role="menu" aria-label="Pagination">
+                                        <li class="disabled" aria-disabled="true"><a href="#previous"
+                                                role="menuitem">Previous</a></li>
+                                        <li aria-hidden="false" aria-disabled="false"><a href="#next"
+                                                role="menuitem">Next</a></li>
+                                        <li aria-hidden="true" style="display: none;"><a href="#finish"
+                                                role="menuitem">Submit</a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
@@ -459,6 +627,9 @@
     <!--Toastr -->
     <script src="assets/extra-libs/toastr/dist/build/toastr.min.js"></script>
     <script src="assets/extra-libs/toastr/toastr-init.js"></script>
+    <!-- This page JS -->
+    <script src="assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
 </body>
 
 </html>
