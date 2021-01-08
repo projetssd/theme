@@ -329,8 +329,9 @@
             <div class="container-fluid">
                 <!-- ============================================================== -->
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-xs-6 col-md-6 col-lg-3">
                         <div class="card">
+
                             <div class="card-body user-block">
                                 <img class="img-circle img-bordered-sm" id="logo-jackett" alt="jackett"
                                     src="https://nc.sdewitte.net/ajax/affiche_image.php?appli=jackett">
@@ -338,40 +339,51 @@
                                         target="_blank"><span class="username" id="nomAppli-jackett">Jackett</span></a>
                                 </h4>
                                 <span class="description" id="version-jackett">v0.17.50</span>
+
                                 <p class="card-text m-t-20">With supporting text below as a natural lead-in to
                                     additional
                                     content.</p>
-                                <div>
+
+                            </div>
+                            <div class="card-footer">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <i class="ti-settings"></i>
+                                    </button>
+                                    <div class="dropdown-menu animated flipInX">
+                                        <a class="dropdown-item" href="javascript:void(0)">Redémarrer</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Arrêter</a>
+                                        <a class="dropdown-item" href="javascript:void(0)">Sauvegarder</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="javascript:void(0)">Configurer</a>
+                                    </div>
+                                </div>
+                                <div class="bootstrap-switch-on bootstrap-switch-mini bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate"
+                                    style="width: 68px;">
+                                    <div class="bootstrap-switch-container" style="width: 99px; margin-left: 0px;"><span
+                                            class="bootstrap-switch-handle-on bootstrap-switch-primary"
+                                            style="width: 33px;">ON</span><span class="bootstrap-switch-label"
+                                            style="width: 33px;">&nbsp;</span><span
+                                            class="bootstrap-switch-handle-off bootstrap-switch-default"
+                                            style="width: 33px;">OFF</span><input type="checkbox" checked=""
+                                            data-size="mini"></div>
+                                </div>
+                                <span class="float-right">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-light dropdown-toggle"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="ti-settings"></i>
+                                        <button data-toggle="modal" data-target="#responsive-modal" type="button"
+                                            class="btn btn-warning">Désinstaller</button>
+                                        <button type="button"
+                                            class="btn btn-warning dropdown-toggle dropdown-toggle-split"
+                                            id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false" data-reference="parent">
+                                            <span class="sr-only">Toggle Dropdown</span>
                                         </button>
-                                        <div class="dropdown-menu animated flipInX">
-                                            <a class="dropdown-item" href="javascript:void(0)">Redémarrer</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Arrêter</a>
-                                            <a class="dropdown-item" href="javascript:void(0)">Sauvegarder</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="javascript:void(0)">Configurer</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Et supprimer les données</a>
                                         </div>
                                     </div>
-
-                                    <span class="float-right">
-                                        <div class="btn-group">
-                                            <button data-toggle="modal" data-target="#responsive-modal" type="button"
-                                                class="btn btn-warning">Désinstaller</button>
-                                            <button type="button"
-                                                class="btn btn-warning dropdown-toggle dropdown-toggle-split"
-                                                id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true"
-                                                aria-expanded="false" data-reference="parent">
-                                                <span class="sr-only">Toggle Dropdown</span>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Et supprimer les données</a>
-                                            </div>
-                                        </div>
-                                    </span>
-                                </div>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -398,7 +410,7 @@
                         </div>
                     </div>
                     <!-- modal confirmation désinstallation -->
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-xs-6 col-md-6 col-lg-3">
                         <div class="card">
                             <div class="card-body user-block">
                                 <img class="img-circle img-bordered-sm" id="logo-jackett" alt="jackett"
@@ -444,7 +456,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-xs-6 col-md-6 col-lg-3">
                         <div class="card">
                             <div class="card-body user-block">
                                 <img class="img-circle img-bordered-sm" id="logo-jackett" alt="jackett"
@@ -490,7 +502,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-xs-6 col-md-6 col-lg-3">
                         <div class="card">
                             <div class="card-body user-block">
                                 <img class="img-circle img-bordered-sm" id="logo-jackett" alt="jackett"
